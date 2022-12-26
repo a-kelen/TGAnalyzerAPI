@@ -81,8 +81,3 @@ async def word_stats(req: WordReq):
 async def word_stats_by_channel(req: GetWordStatsByChannel):
     res = channelService.get_channel_word_stats(req.channel_id, req.word)
     return JSONResponse(content=res)
-
-# @app.get('/words/exclude', tags=['ExcludeWord'])
-# async def ExcludeWord():
-   
-#     return JSONResponse(content=)
